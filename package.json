@@ -1,0 +1,25 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "description": "backend with jitendra",
+  "keywords": [
+    "backend",
+    "javascript",
+    "node.js"
+  ],
+  "homepage": "https://github.com/jitendra-devjit/Backend-Project#readme",
+  "bugs": {
+    "url": "https://github.com/jitendra-devjit/Backend-Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jitendra-devjit/Backend-Project.git"
+  },
+  "license": "ISC",
+  "author": "Jitendra Devatwal",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
