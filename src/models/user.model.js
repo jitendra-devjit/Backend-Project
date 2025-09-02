@@ -1,5 +1,5 @@
 import mongoose ,{Schema} from "mongoose";
-import { JsonWebTokenError } from "jsonwebtoken";
+import JsonWebTokenError from "jsonwebtoken";
 import bcrypt from "bcrypt";
 const userSchema = new Schema({
     username: {
@@ -49,9 +49,9 @@ userSchema.pre("save", async function (next) {
     next();
 });
 
-userSchema.methods.comparePassword = async function (Password) {
-    return await bcrypt.compare(Password, this.password);
-};
+userSchema.methods.comparePassword = async function (password) {
+    return await bcrypt.compare(password, this.password);
+}
 
 userSchema.methods.generateAccessToken = function (){
     return jwt.sign(
